@@ -8,7 +8,7 @@
 ## Установка
 
 1. Склонируй репозиторий  
-   git clone https://github.com/YOU/MaxUserBot.git  
+   git clone https://github.com/wlogc/MaxUserBot.git  
    cd MaxUserBot  
 
 2. Установи зависимости  
