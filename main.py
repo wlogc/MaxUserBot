@@ -18,9 +18,10 @@ my_id = client.me["profile"]["contact"]["id"]
 detect_chat = config.MAX_CHAT_ID
 
 while True:
+
 	recv = client.recv()
 	if recv:
-		recv = json.loads(recv)
+		recv = json.loads(str(recv))
 
 		if recv['opcode'] == 128 and not recv["payload"] is None:
 			sender = recv["payload"]["message"]["sender"]
@@ -91,3 +92,5 @@ while True:
 			}
 		}
 		client.send(j)
+
+
